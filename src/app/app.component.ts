@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tp02-schmidt-guillaume';
+  title = 'tp02_schmidt_guillaume';
   userForm!: FormGroup;
 
   constructor(private fb: FormBuilder) {}
