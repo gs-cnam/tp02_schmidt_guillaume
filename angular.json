@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tp02_schmidt_guillaume": {
+    "tp02-schmidt-guillaume": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "tp02_schmidt_guillaume:build:production"
+              "browserTarget": "tp02-schmidt-guillaume:build:production"
             },
             "development": {
-              "browserTarget": "tp02_schmidt_guillaume:build:development"
+              "browserTarget": "tp02-schmidt-guillaume:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tp02_schmidt_guillaume:build"
+            "browserTarget": "tp02-schmidt-guillaume:build"
           }
         },
         "test": {
