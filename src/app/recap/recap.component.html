@@ -1,0 +1,42 @@
+<ng-container [formGroup]="form">
+    <div id="recap"  class="table-responsive-sm">
+    <table class="table">
+        <tr class="table-info">
+            <th scope="row">Civilité</th>
+            <td>{{form.value["civilite"]}}</td>
+        </tr>
+        <tr class="">
+            <th scope="row">Nom</th>
+            <td>{{form.value["nom"]}}</td>
+        </tr>
+        <tr class="table-info">
+            <th scope="row">Prénom</th>
+            <td>{{form.value["prenom"]}}</td>
+        </tr>
+        <tr class="">
+            <th scope="row">adresse</th>
+            <td>{{form.value["adresse"]}}</td>
+        </tr>
+        <tr class="table-info">
+            <th scope="row">Code Postal</th>
+            <td>{{form.value["cp"]}}</td>
+        </tr>
+        <tr class="">
+            <th scope="row">Ville</th>
+            <td>{{form.value["ville"]}}</td>
+        </tr>
+        <tr class="table-info">
+            <th scope="row">Pays</th>
+            <td>{{form.value["liays"]}}</td>
+        </tr>
+        <tr class="">
+            <th scope="row">Identifiant</th>
+            <td>{{form.value["id"]}}</td>
+        </tr>
+        <tr class="table-info">
+            <th scope="row">Email</th>
+            <td>{{form.value["mail"]}}</td>
+        </tr>
+    </table>
+</div>
+</ng-container>

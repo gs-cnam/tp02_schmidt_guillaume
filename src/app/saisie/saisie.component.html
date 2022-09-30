@@ -1,0 +1,57 @@
+<ng-container [formGroup]="form">
+    <div id="saisie" class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-2">
+                        <select class="form-control" formControlName="civilite">
+                            <option value="Civilité" disabled selected>-- Civilité --</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mme</option>
+                        </select>
+                    </div>
+                    <div class="form-group col">
+                        <input type="text" class="form-control" formControlName="nom" placeholder="Nom" />
+                    </div>
+                    <div class="form-group col">
+                        <input type="text" class="form-control" formControlName="prenom" placeholder="Prénom" />
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="adresse" placeholder="Adresse" />
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <input type="text" class="form-control" formControlName="cp" placeholder="Code Postal" />
+                    </div>
+                    <div class="form-group col">
+                        <input type="text" class="form-control" formControlName="ville" placeholder="Ville" />
+                    </div>
+                    <div class="form-group col">
+                        <input type="text" class="form-control" formControlName="pays" placeholder="Pays" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <input type="text" class="form-control" formControlName="id" placeholder="Identifiant" />
+                    </div>
+                    <div class="form-group col">
+                        <input type="text" class="form-control" formControlName="mail" placeholder="Email" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <input type="password" class="form-control" placeholder="Mot de passe" />
+                    </div>
+                    <div class="form-group col">
+                        <input type="password" class="form-control" placeholder="Comfirmez le mot de passe" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary mr-1">Valider</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</ng-container>

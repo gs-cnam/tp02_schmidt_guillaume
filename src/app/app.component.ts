@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tp02_schmidt_guillaume';
+  userForm!: FormGroup;
+
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.userForm = this.fb.group({
+      basicInfo: this.fb.group({
+        civilite: [],
+        nom: [],
+        prenom: [],
+        adresse: [],
+        cp: [],
+        ville: [],
+        pays: [],
+        id: [],
+        mail: []
+      })
+    });
+  }
 }
